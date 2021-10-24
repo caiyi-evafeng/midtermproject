@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+
+body,html{
+
+  cursor: url('manfigure.png')45 10, auto;
+  padding: 0px;
+  margin: 0px;
+  background-image: url("image09.gif");
+  background-repeat: repeat;
+
+  font-size: 60px;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: bold;
+  color: black;
+
+}
+.title{
+  display:flex;
+  position:absolute;
+  justify-content: center;
+
+}
+body {
+  border: none;
+  color: #6D616F;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
