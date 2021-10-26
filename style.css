@@ -1,13 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body, html{
-  cursor: url('manfigure.png')45 10, auto;
   padding: 0px;
   margin: 0px;
   height: 100%;
   min-height: 100vh;
-
   /* overflow: hidden; */
+}
+
+body, html, a {
+    cursor: url('manfigure.png')45 10, auto;
+}
+
+body#page04 {
+  background-image: url("image09.gif");
+  background-repeat: repeat;
+  color: black;
+}
+body#page05 {
+  background-image: url("bird.gif");
+  background-repeat: repeat;
+  color: black;
 }
 
 .mainContainer{
@@ -15,21 +32,33 @@ body, html{
   font-family: 'Noto Sans Mono', monospace;
   font-weight: bold;
   color: #C5C6D0;
-
 }
+
 .title{
-  display:flex;
-  position:absolute;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* background-color: #ff0072; */
+  pointer-events: none;
+  text-shadow: 0px 0px 8px #000000;
 
 }
+
 .sideByContainer{
   display: flex;
   flex-direction: row;
+}
 
+img {
+  object-fit: cover;
 }
 
 .sideByContainer img{
+  /* position: relative; */
   width: 50vw;
   height: 100vh;
   /* width: 50vw; */
@@ -42,3 +71,68 @@ body, html{
   height: 100vh;
   object-fit: cover;
 } */
+
+.page04Content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.bottomContent {
+  /* background-color: #ff0072; */
+  flex-grow: 1;
+  padding: 5vw;
+}
+
+a.finalLink, a:visited.finalLink {
+  text-decoration: none;
+  color: #000;
+}
+
+.finalButton {
+  /* background-color: #888; */
+  /* background: rgb(2,0,36,0.3);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(157,157,210,1) 35%, rgba(0,212,255,1) 100%);
+   */
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,9,121,0.5508578431372548) 35%, rgba(0,212,255,1) 100%);
+  /* border: 2px solid #222; */
+  border-radius: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finalButton:hover {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,181,233,1) 0%, rgba(9,72,121,0.738532913165266) 57%, rgba(101,23,240,0.8113620448179272) 100%);
+}
+  .text{
+  height: 100vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,181,233,0.7525385154061625) 0%, rgba(9,72,121,0.738532913165266) 57%, rgba(101,23,240,0.8113620448179272) 100%);
+  font-size: 35px;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: bold;
+  color: #BEBEBE;
+  }
+  .text > .content{
+    padding-left: 25px;
+
+  }
+
+  /* .text>button{
+
+    background-image: url(back_icon.png);
+     background-repeat: no-repeat;
+    /*background-position: 50% 50%; */
+    /* put the height and width of your image here */
+    /* height: 50px;
+    width: 200px;
+    border: none;
+  }
+
+  button span {
+    display: none;
+  } */
